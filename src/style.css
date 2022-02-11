@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {  
+    height: 100%;
+    background-color: cornflowerblue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;    
+ }
+
+ .header {
+    background-color: chartreuse;
+    grid-column: 1 / 3;
+ }
+
+.sidebar {
+    display: grid;
+    background-color: bisque;
+    grid-column: 1 / 2;
+    height: 100vh;
+}
+
+.add , .clear{
+    background-color: darkgreen;
+    
+}
+.info .container {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+.task {
+    background-color: crimson;
+    width: 500px;
+    height: 40px;
+}

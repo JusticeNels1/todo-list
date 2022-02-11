@@ -1,20 +1,20 @@
 import _ from 'lodash';
 import './style.css';
+import {tasks} from './task';
+import changeDom from './changeDom';
 
-function clearDom() {
-    const container = document.querySelector(".info .container")
 
-    while(container.firstChild) {
-        container.removeChild(container.lastChild)
-    }
-}
+const button = changeDom.createaddButton() 
 
-function addTask() {
-    
-}
-const button = document.querySelector('.add-task');
+changeDom.task_modal.appendChild(button) 
+document.querySelector('.add-task');
+
 
 button.onclick = () => {
-    console.log(changeDom())
+    button.remove();
+    
+    changeDom.createTaskModal();
 }
-addTask()
+
+
+ 
